@@ -1,3 +1,9 @@
+package circus;
+
+import circus.animal.Animal;
+import circus.animal.Bird;
+import circus.animal.Duck;
+
 public class Trainer {
     public static void main(String[] args) {
         Duck d = new Duck();
@@ -11,9 +17,9 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // downcasting
         train(new Duck());
-        //train(new Parrot()); Parrot cannot be cast to Duck - completely unrelated
-        //Animal a2 = new Animal();
-        //Bird b2 = new Bird();
+        //train(new circus.animal.Parrot()); circus.animal.Parrot cannot be cast to circus.animal.Duck - completely unrelated
+        //circus.animal.Animal a2 = new circus.animal.Animal();
+        //circus.animal.Bird b2 = new circus.animal.Bird();
     }
 
     private static void getToSpeak(Animal animal) {
