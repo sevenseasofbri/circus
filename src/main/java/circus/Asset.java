@@ -1,5 +1,5 @@
 package circus;
 
 public interface Asset {
-    int getValue();
+    int getValue(); //Created interface
 }
