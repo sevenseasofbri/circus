@@ -11,9 +11,9 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // downcasting
         train(new Duck());
-        // train(new Parrot());
-        Animal a2 = new Animal();
-        Bird b2 = new Bird();
+        //train(new Parrot()); Parrot cannot be cast to Duck - completely unrelated
+        //Animal a2 = new Animal();
+        //Bird b2 = new Bird();
     }
 
     private static void getToSpeak(Animal animal) {

@@ -1,6 +1,4 @@
-public class Animal {
+public abstract class Animal { //Declaring abstract to prevent instance of animal
     
-    public String speak(){
-        return null;
-    }
+    public abstract String speak();
 }
