@@ -1,5 +1,5 @@
-package circus;
-
+package circus.stuff;
+import circus.Asset;
 public abstract class Equipment implements Asset {
     protected int purchasePrice;
 
@@ -7,6 +7,7 @@ public abstract class Equipment implements Asset {
         this.purchasePrice = purchasePrice;
     }
 
+    @Override
     public int getValue() {
         return purchasePrice;
     }

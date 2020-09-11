@@ -17,9 +17,7 @@ public class Trainer {
 
         Duck d2 = (Duck) a; // downcasting
         train(new Duck());
-        //train(new circus.animal.Parrot()); circus.animal.Parrot cannot be cast to circus.animal.Duck - completely unrelated
-        //circus.animal.Animal a2 = new circus.animal.Animal();
-        //circus.animal.Bird b2 = new circus.animal.Bird();
+        // train(new circus.animal.Parrot());
     }
 
     private static void getToSpeak(Animal animal) {
@@ -27,7 +25,9 @@ public class Trainer {
     }
 
     private static void train(Bird bird) {
-        Duck d = (Duck) bird;
-        d.swim();
+        if (bird instanceof Duck) {
+            Duck d = (Duck) bird;
+            d.swim();
+        }
     }
 }
